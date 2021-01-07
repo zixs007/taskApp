@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14DC26625A74AA3004635B8 /* inputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14DC26525A74AA3004635B8 /* inputViewController.swift */; };
 		D178677925A7483200320EDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178677825A7483200320EDD /* AppDelegate.swift */; };
 		D178677B25A7483200320EDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178677A25A7483200320EDD /* SceneDelegate.swift */; };
 		D178677D25A7483200320EDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D178677C25A7483200320EDD /* ViewController.swift */; };
 		D178678025A7483200320EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D178677E25A7483200320EDD /* Main.storyboard */; };
 		D178678225A7483400320EDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D178678125A7483400320EDD /* Assets.xcassets */; };
 		D178678525A7483400320EDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D178678325A7483400320EDD /* LaunchScreen.storyboard */; };
+		E7929FB05AFA893D81EDD270 /* Pods_taskApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11038D9C78786992D7E5DDE /* Pods_taskApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A93223C6E40D91BE3BBA5E02 /* Pods-taskApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-taskApp/Pods-taskApp.release.xcconfig"; sourceTree = "<group>"; };
+		B4AAE5B37EC61E5BAD536170 /* Pods-taskApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taskApp/Pods-taskApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C11038D9C78786992D7E5DDE /* Pods_taskApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taskApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14DC26525A74AA3004635B8 /* inputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inputViewController.swift; sourceTree = "<group>"; };
 		D178677525A7483200320EDD /* taskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D178677825A7483200320EDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D178677A25A7483200320EDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7929FB05AFA893D81EDD270 /* Pods_taskApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D9BC18D436D98749E92255 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4AAE5B37EC61E5BAD536170 /* Pods-taskApp.debug.xcconfig */,
+				A93223C6E40D91BE3BBA5E02 /* Pods-taskApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9BE3EE00D623562FD87259D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C11038D9C78786992D7E5DDE /* Pods_taskApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D178676C25A7483200320EDD = {
 			isa = PBXGroup;
 			children = (
 				D178677725A7483200320EDD /* taskApp */,
 				D178677625A7483200320EDD /* Products */,
+				09D9BC18D436D98749E92255 /* Pods */,
+				9BE3EE00D623562FD87259D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				D178677825A7483200320EDD /* AppDelegate.swift */,
 				D178677A25A7483200320EDD /* SceneDelegate.swift */,
 				D178677C25A7483200320EDD /* ViewController.swift */,
+				D14DC26525A74AA3004635B8 /* inputViewController.swift */,
 				D178677E25A7483200320EDD /* Main.storyboard */,
 				D178678125A7483400320EDD /* Assets.xcassets */,
 				D178678325A7483400320EDD /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D178678925A7483400320EDD /* Build configuration list for PBXNativeTarget "taskApp" */;
 			buildPhases = (
+				D3CFD9F3864CAF87DF9DF81B /* [CP] Check Pods Manifest.lock */,
 				D178677125A7483200320EDD /* Sources */,
 				D178677225A7483200320EDD /* Frameworks */,
 				D178677325A7483200320EDD /* Resources */,
+				398E61B65E3C934CC6AA9DC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		398E61B65E3C934CC6AA9DC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-taskApp/Pods-taskApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taskApp/Pods-taskApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3CFD9F3864CAF87DF9DF81B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taskApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D178677125A7483200320EDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +211,7 @@
 				D178677D25A7483200320EDD /* ViewController.swift in Sources */,
 				D178677925A7483200320EDD /* AppDelegate.swift in Sources */,
 				D178677B25A7483200320EDD /* SceneDelegate.swift in Sources */,
+				D14DC26625A74AA3004635B8 /* inputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +353,13 @@
 		};
 		D178678A25A7483400320EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4AAE5B37EC61E5BAD536170 /* Pods-taskApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FXQ4796G9;
 				INFOPLIST_FILE = taskApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +373,13 @@
 		};
 		D178678B25A7483400320EDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93223C6E40D91BE3BBA5E02 /* Pods-taskApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FXQ4796G9;
 				INFOPLIST_FILE = taskApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
