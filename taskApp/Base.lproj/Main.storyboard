@@ -15,12 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="mkk-JZ-Cho">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g7X-Dq-TmN">
-                                <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="fYF-au-wGW" detailTextLabel="ss9-dV-hJ9" style="IBUITableViewCellStyleSubtitle" id="HVj-RV-S45">
@@ -52,13 +48,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g7X-Dq-TmN" secondAttribute="bottom" id="3tp-gj-cbw"/>
-                            <constraint firstItem="mkk-JZ-Cho" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ass-5o-1Bv"/>
-                            <constraint firstItem="g7X-Dq-TmN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cld-9u-K63"/>
-                            <constraint firstItem="mkk-JZ-Cho" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PZH-ky-F7O"/>
-                            <constraint firstItem="g7X-Dq-TmN" firstAttribute="top" secondItem="mkk-JZ-Cho" secondAttribute="bottom" id="k3Z-DN-V03"/>
-                            <constraint firstItem="mkk-JZ-Cho" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kTk-D3-8na"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g7X-Dq-TmN" secondAttribute="trailing" id="xWi-gp-7d9"/>
+                            <constraint firstItem="g7X-Dq-TmN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9PT-qr-RZd"/>
+                            <constraint firstItem="g7X-Dq-TmN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AeI-7v-CmC"/>
+                            <constraint firstItem="g7X-Dq-TmN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Q23-Sq-M1z"/>
+                            <constraint firstItem="g7X-Dq-TmN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XoK-QI-QH3"/>
+                            <constraint firstItem="g7X-Dq-TmN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s87-6d-YYl"/>
+                            <constraint firstItem="g7X-Dq-TmN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xea-Mr-gbp"/>
+                            <constraint firstItem="g7X-Dq-TmN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zHd-HE-MAH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -86,7 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udJ-bF-ra4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udJ-bF-ra4">
                                 <rect key="frame" x="10" y="98" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -102,13 +98,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apt-N0-cFP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apt-N0-cFP">
                                 <rect key="frame" x="10" y="173" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emJ-7b-8Ih">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emJ-7b-8Ih">
                                 <rect key="frame" x="10" y="248" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -159,6 +155,12 @@
                         <viewLayoutGuide key="safeArea" id="ACu-iL-ymh"/>
                     </view>
                     <navigationItem key="navigationItem" id="v0h-qr-YrC"/>
+                    <connections>
+                        <outlet property="categoryField" destination="0cH-85-4PL" id="ZIY-XB-5C0"/>
+                        <outlet property="datePicker" destination="2gt-gh-Ez7" id="lCF-Xo-LIs"/>
+                        <outlet property="textView" destination="VAy-QY-9DK" id="IrO-cJ-6qD"/>
+                        <outlet property="titleField" destination="CTe-rP-jXh" id="otn-F6-0Og"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGu-9j-TX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
