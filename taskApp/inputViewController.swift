@@ -17,8 +17,10 @@ class inputViewController: UIViewController {
     let realM = try! Realm()
     var taSk:Task!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissK))
@@ -38,7 +40,7 @@ class inputViewController: UIViewController {
         try!realM.write{
             self.taSk.title = self.titleField.text!
             self.taSk.category = self.categoryField.text!
-            self.taSk.contents = self.textView.text
+            self.taSk.contents = self.textView.text!
             self.taSk.date = self.datePicker.date
             self.realM.add(self.taSk,update:.modified)
         }
@@ -98,5 +100,10 @@ class inputViewController: UIViewController {
     @IBOutlet weak var categoryField: UITextField!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var datePicker: UIDatePicker!
+    
+    
+    func color (){
+        textView.layer.borderColor = UIColor.black.cgColor
+    }
     
 }

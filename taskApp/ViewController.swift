@@ -43,17 +43,18 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
    
  func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
     
-    let predicate = NSPredicate(format: "category contains %@",searchText)
+    let predicate = NSPredicate(format: "category contains[c] %@",searchText)
         var cate = realm.objects(Task.self).filter(predicate)
-       
     
         
         if searchText.count > 0{
-            
+           
             var filterResults = cate.filter
+
     }
         taskArrey = cate
         tableView.reloadData()
+   
         }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
